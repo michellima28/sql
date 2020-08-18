@@ -2,7 +2,7 @@
 sql scripts that I use in my personal projects
 
 # prerequisites
-you must have database installed in your machine
+you must have installed a database in your machine
 
 # installing postgresql
 ### update your system
