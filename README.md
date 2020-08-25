@@ -1,40 +1,77 @@
-# sql
-sql scripts that I use in my personal projects
+# SQL
 
-# prerequisites
-you must have installed a database in your machine
+SQL scripts that I use in my personal projects.
 
-# installing postgresql
-### update your system
+## Prerequisites
+
+You must have installed a database in your machine.
+
+## Installing PostgreSQL
+
+### Update your system
+
+```bash
 sudo apt update
+```
 
+```bash
 sudo apt -y upgrade
+```
 
-### install postgresql database server
+### Install PostgreSQL database server
+
+```bash
 sudo apt install postgresql postgresql-client
+```
 
-### check if server is running
-the service is automatically started upon installation, you can confirm if it is running with the command:
+### Check if server is running
 
+The service is automatically started upon installation, you can confirm if it is running with the command:
+
+```bash
 systemctl status postgresql.service
+```
 
-### update postgresql admin user's password
+### Update PostgreSQL admin user's password
+
+```bash
 sudo su - postgres
+```
 
+```bash
 psql -c "alter user postgres with password 'your_password'"
+```
 
-### try creating a test database and user
+### Try creating a test database and user
 
+```bash
 createuser dbuser
+```
 
+```bash
 createdb testdb -O dbuser
+```
 
+```bash
 psql testdb
+```
 
+```bash
 alter user dbuser with password 'StrongPassword';
+```
 
+```bash
 \q
+```
 
-### list created databases
+### List created databases
 
+```bash
 psql -l
+```
+
+## References
+
+### PostgreSQL installation
+
+https://computingforgeeks.com/installing-postgresql-database-server-on-ubuntu/
