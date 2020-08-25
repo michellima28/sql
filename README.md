@@ -2,9 +2,13 @@
 
 SQL scripts that I use in my personal projects.
 
+---
+
 ## Prerequisites
 
 You must have installed a database in your machine.
+
+---
 
 ## Installing PostgreSQL
 
@@ -69,6 +73,7 @@ alter user dbuser with password 'StrongPassword';
 ```bash
 psql -l
 ```
+---
 
 ## References
 
